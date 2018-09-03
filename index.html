@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+<meta charset="UTF-8">
+<title>Google VR View for the Web example</title>
+</head>
+
+<body>
+
+<div id="vrview"></div>
+<script src="//storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+<script>
+  window.addEventListener('load', onVrViewLoad)
+  function onVrViewLoad() {
+    var vrView = new VRView.Player('#vrview', {
+      image: 'test.jpg'
+    });
+  }
+</script>
+</body>
+
+</html>
